@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/classify/classify",
+    "pages/user/user"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "壁纸",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "text": "推荐",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/icon/home-h.svg",
+        "selectedIconPath": "static/icon/home.svg"
+      },
+      {
+        "text": "分类",
+        "pagePath": "pages/classify/classify",
+        "iconPath": "static/icon/classify-h.svg",
+        "selectedIconPath": "static/icon/classify.svg"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/user/user",
+        "iconPath": "static/icon/user-h.svg",
+        "selectedIconPath": "static/icon/user.svg"
+      }
+    ]
+  },
+  "usingComponents": {}
+}
