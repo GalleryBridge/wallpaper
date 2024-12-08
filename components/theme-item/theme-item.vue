@@ -1,11 +1,11 @@
 <template>
 	<view class="themeItem">
-		<navigator url="#" class="box" v-if="!isMore">
+		<navigator url="/pages/classlist/classlist" class="box" v-if="!isMore">
 			<image class="pic" src="../../common/image/swapper2.png" mode="aspectFill"></image>
 			<view class="mask">美女明星</view>
 			<view class="tap">3天前更新</view>
 		</navigator>
-		<navigator url="#" class="box more" v-else>
+		<navigator url="/pages/classify/classify" open-type="reLaunch" class="box more" v-else>
 			<image class="pic" src="../../common/image/swapper2.png" mode="aspectFill"></image>
 			<view class="mask">
 				<uni-icons type="more-filled" size="34" color="#fff"></uni-icons>

@@ -56,7 +56,7 @@
   justify-content: center;
 }
 .homeLayout .notice .left .text.data-v-1cf27b2a {
-  color: #28b389;
+  color: red;
   font-weight: 600;
   font-size: 28rpx;
 }

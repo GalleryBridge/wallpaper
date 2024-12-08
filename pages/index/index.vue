@@ -1,5 +1,5 @@
 <template>
-	<view class="homeLayout">
+	<view class="homeLayout paegBg">
 		<view class="banner">
 			<swiper indicator-dots indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#fff" autoplay circular>
 				<swiper-item v-for="item in 3">
@@ -9,7 +9,7 @@
 		</view>
 		<view class="notice">
 			<view class="left">
-				<uni-icons type="sound-filled" size="20" color="#28b389"></uni-icons>
+				<uni-icons type="sound-filled" size="20"></uni-icons>
 				<text>公告</text>
 			</view>
 			<view class="center">
@@ -35,9 +35,9 @@
 			</common-title>
 			<view class="content">
 				<scroll-view scroll-x>
-					<view class="box" v-for="item in 8">
+					<navigator url="/pages/preview/preview" class="box" v-for="item in 8">
 						<image src="../../common/image/scroll.png" mode="aspectFill"></image>
-					</view>
+					</navigator>
 				</scroll-view>
 			</view>
 		</view>
@@ -93,8 +93,13 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				.text {
-					color: #28b389;
+				:deep(){		//	穿透到组件内部
+					.uni-icons {
+						color: $brand-theme-color !important;
+					}
+				}
+				text {
+					color: $brand-theme-color ;
 					font-weight: 600;
 					font-size: 28rpx
 				}

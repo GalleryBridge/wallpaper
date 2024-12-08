@@ -1,6 +1,6 @@
 {
     "name" : "wallpaper",
-    "appid" : "",
+    "appid" : "__UNI__B525D70",
     "description" : "",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -50,7 +50,7 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "",
+        "appid" : "wxfbff67cb577dd6f6",
         "setting" : {
             "urlCheck" : false
         },
